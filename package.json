@@ -3,9 +3,11 @@
   "version": "1.0.0",
   "description": "Example MCP server to get weather data",
   "type": "module",
-  "main": "index.js",
+  "bin": {
+    "weather": "./build/index.js"
+  },
   "scripts": {
-    "test": "npm test"
+    "build": "tsc && chmod 755 build/index.js"
   },
   "author": "Nick Alteen <ncalteen@gmail.com>",
   "license": "MIT",
